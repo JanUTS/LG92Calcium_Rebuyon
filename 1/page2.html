@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <button onclick="acti_1()">See the first Image</button>
+    <button onclick="acti_2()">See the second Image</button>
+
+    <img id="i1"  src="../img1.jpg"> 
+
+    <img  id="i2"  src="../img2.jpg"> 
+
+    <script>
+        var im1 = document.getElementById("i1");
+        var im2 = document.getElementById("i2");
+        function acti_2()
+        {
+            im1.style.display = "block";
+            im2.style.display = "none"; 
+        }
+        function acti_1()
+        {
+            im1.style.display = "none";
+            im2.style.display = "block";
+        }
+    </script>
+</body>
+</html>
